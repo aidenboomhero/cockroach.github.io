@@ -1,0 +1,141 @@
+<html>
+
+<head>
+  <title>CockRoach clicker ver0.3 beta</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preload" href="applab/fontawesome-webfont.woff2" as="font">
+  <script src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
+  <script>
+    function setExportConfig(config) {window.EXPORT_OPTIONS = config;}
+  </script>
+  <script
+    src="https://studio.code.org/projects/applab/ASJhE8SrOqFYV176DSS5VOW0iA8NKGMnRGM9BPBUC3Q/export_config?script_call=setExportConfig"></script>
+  <script src="applab/applab-api.js"></script>
+  <script src="https://www.google.com/jsapi"></script>
+  <link rel="stylesheet" href="applab/applab.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="divApplab" class="appModern running" tabindex="1" style="width: 320px; height: 450px; display: block;">
+    <div class="screen" tabindex="1" data-theme="default" id="mainScreen"
+      style="display: block; height: 450px; width: 320px; left: 0px; top: 0px; position: absolute; z-index: 0; background: linear-gradient(to bottom, #ffcc00, #ff2400);">
+
+      <img src="assets/downl.jpeg" data-canonical-image-url="assets/downl.jpeg" data-image-type="file"
+        data-object-fit="contain" id="cockroach"
+        style="height: 100px; width: 100px; border: 0px solid rgb(0, 0, 0); border-radius: 0px; position: absolute; left: 115px; top: 145px; margin: 0px; object-fit: contain; font-family: &quot;object-fit: contain;&quot;;"><label
+        style="margin: 0px; line-height: 1; overflow: hidden; overflow-wrap: break-word; max-width: 320px; border: 0px solid rgb(77, 87, 95); text-rendering: optimizespeed; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 0px; font-family: &quot;Arial Black&quot;, Gadget, sans-serif; font-size: 13px; padding: 2px 15px; width: 127px; height: 18px; position: absolute; left: 5px; top: 25px;"
+        id="roachlabel">cockroaches:</label><label
+        style="margin: 0px; line-height: 1; overflow: hidden; overflow-wrap: break-word; max-width: 320px; border: 0px solid rgb(0, 0, 0); text-rendering: optimizespeed; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 0px; font-family: &quot;Arial Black&quot;, Gadget, sans-serif; font-size: 13px; padding: 2px 15px; width: 195px; height: 31px; position: absolute; left: 60px; top: 130px;"
+        id="Tutorial">click the roach to get more roaches</label><label
+        style="margin: 0px; line-height: 1; overflow: hidden; overflow-wrap: break-word; max-width: 320px; border: 0px solid rgb(0, 0, 0); text-rendering: optimizespeed; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 0px; font-family: &quot;Arial Black&quot;, Gadget, sans-serif; font-size: 13px; padding: 2px 15px; width: 95px; height: 20px; position: absolute; left: 0px; top: 260px;"
+        id="Clickers">Clickers</label><label
+        style="margin: 0px; line-height: 1; overflow: hidden; overflow-wrap: break-word; max-width: 320px; border: 0px solid rgb(77, 87, 95); text-rendering: optimizespeed; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 0px; font-family: &quot;Arial Black&quot;, Gadget, sans-serif; font-size: 13px; padding: 2px 15px; width: 80px; height: 20px; position: absolute; left: 65px; top: 260px;"
+        id="ClickerNumber">0</label><label
+        style="margin: 0px; line-height: 1; overflow: hidden; overflow-wrap: break-word; max-width: 320px; border: 0px solid rgb(0, 0, 0); text-rendering: optimizespeed; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 0px; font-family: &quot;Arial Black&quot;, Gadget, sans-serif; font-size: 13px; padding: 2px 15px; width: 120px; height: 30px; position: absolute; left: 195px; top: 0px;"
+        id="label1">Ver&nbsp;0.3 beta</label><label
+        style="margin: 0px; line-height: 1; overflow: hidden; overflow-wrap: break-word; max-width: 320px; border: 0px solid rgb(77, 87, 95); text-rendering: optimizespeed; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 0px; font-family: &quot;Arial Black&quot;, Gadget, sans-serif; font-size: 13px; padding: 2px 15px; width: 65px; height: 70px; position: absolute; left: 80px; top: 50px;"
+        id="RpsLabel">Rps</label><label
+        style="margin: 0px; line-height: 1; overflow: hidden; overflow-wrap: break-word; max-width: 320px; border: 0px solid rgb(77, 87, 95); text-rendering: optimizespeed; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 0px; font-family: &quot;Arial Black&quot;, Gadget, sans-serif; font-size: 13px; padding: 2px 15px; width: 95px; height: 30px; position: absolute; left: 115px; top: 50px;"
+        id="RpsNumber">0</label><label
+        style="margin: 0px; line-height: 1; overflow: hidden; overflow-wrap: break-word; max-width: 320px; border: 0px solid rgb(77, 87, 95); text-rendering: optimizespeed; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 0px; font-family: &quot;Arial Black&quot;, Gadget, sans-serif; font-size: 13px; padding: 2px 15px; width: 116px; height: 18px; position: absolute; left: 0px; top: 280px;"
+        id="Sclickers">Super&nbsp;Clickers</label><label
+        style="margin: 0px; line-height: 1; overflow: hidden; overflow-wrap: break-word; max-width: 320px; border: 0px solid rgb(77, 87, 95); text-rendering: optimizespeed; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 0px; font-family: &quot;Arial Black&quot;, Gadget, sans-serif; font-size: 13px; padding: 2px 15px; width: 95px; height: 20px; position: absolute; left: 90px; top: 280px;"
+        id="SC">0</label><button
+        style="padding: 0px; margin: 0px; border: 1px solid rgb(77, 87, 95); height: 40px; width: 100px; background-color: rgb(255, 164, 0); color: rgb(255, 255, 255); border-radius: 4px; font-family: &quot;Arial Black&quot;, Gadget, sans-serif; font-size: 15px; position: absolute; left: 205px; top: 390px;"
+        id="upgradeButton">upgrades</button><label
+        style="margin: 0px; line-height: 1; overflow: hidden; overflow-wrap: break-word; max-width: 320px; border: 0px solid rgb(77, 87, 95); text-rendering: optimizespeed; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 0px; font-family: &quot;Arial Black&quot;, Gadget, sans-serif; font-size: 13px; padding: 2px 15px; width: 109px; height: 18px; position: absolute; left: 0px; top: 300px;"
+        id="label11">Mega click</label><label
+        style="margin: 0px; line-height: 1; overflow: hidden; overflow-wrap: break-word; max-width: 320px; border: 0px solid rgb(77, 87, 95); text-rendering: optimizespeed; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 0px; font-family: &quot;Arial Black&quot;, Gadget, sans-serif; font-size: 13px; padding: 2px 15px; width: 40px; height: 18px; position: absolute; left: 90px; top: 300px;"
+        id="MCN2">0</label><label
+        style="margin: 0px; line-height: 1; overflow: hidden; overflow-wrap: break-word; max-width: 320px; border: 0px solid rgb(77, 87, 95); text-rendering: optimizespeed; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 0px; font-family: &quot;Arial Black&quot;, Gadget, sans-serif; font-size: 13px; padding: 2px 15px; width: 119px; height: 18px; position: absolute; left: 0px; top: 320px;"
+        id="label13">Giga Clicker</label><label
+        style="margin: 0px; line-height: 1; overflow: hidden; overflow-wrap: break-word; max-width: 320px; border: 0px solid rgb(77, 87, 95); text-rendering: optimizespeed; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 0px; font-family: &quot;Arial Black&quot;, Gadget, sans-serif; font-size: 13px; padding: 2px 15px; width: 40px; height: 18px; position: absolute; left: 95px; top: 320px;"
+        id="GCN2">0</label><label
+        style="margin: 0px; line-height: 1; overflow: hidden; overflow-wrap: break-word; max-width: 320px; border: 0px solid rgb(77, 87, 95); text-rendering: optimizespeed; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 0px; font-family: &quot;Arial Black&quot;, Gadget, sans-serif; font-size: 13px; padding: 2px 15px; width: 113px; height: 18px; position: absolute; left: 4.44089e-16px; top: 340px;"
+        id="label15">Ultra Cliker</label><label
+        style="margin: 0px; line-height: 1; overflow: hidden; overflow-wrap: break-word; max-width: 320px; border: 0px solid rgb(77, 87, 95); text-rendering: optimizespeed; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 0px; font-family: &quot;Arial Black&quot;, Gadget, sans-serif; font-size: 13px; padding: 2px 15px; width: 40px; height: 18px; position: absolute; left: 90px; top: 340px;"
+        id="UCN2">0</label><label
+        style="margin: 0px; line-height: 1; overflow: hidden; overflow-wrap: break-word; max-width: 320px; border: 0px solid rgb(77, 87, 95); text-rendering: optimizespeed; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 0px; font-family: &quot;Arial Black&quot;, Gadget, sans-serif; font-size: 13px; padding: 2px 15px; width: 137px; height: 18px; position: absolute; left: 0px; top: 360px;"
+        id="label17">Omega Clicker</label> <label
+        style="margin: 0px; line-height: 1; overflow: hidden; overflow-wrap: break-word; max-width: 320px; border: 0px solid rgb(77, 87, 95); text-rendering: optimizespeed; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 0px; font-family: &quot;Arial Black&quot;, Gadget, sans-serif; font-size: 13px; padding: 2px 15px; width: 40px; height: 18px; position: absolute; left: 115px; top: 360px;"
+        id="OCN2">0</label><button id="reset1"
+        style="padding: 0px; margin: 0px; border-style: solid; height: 15px; width: 49px; background-color: rgb(255, 164, 0); color: rgb(255, 255, 255); border-color: rgb(77, 87, 95); border-radius: 4px; border-width: 1px; font-family: &quot;Arial Black&quot;, Gadget, sans-serif; font-size: 9px; position: absolute; left: 225px; top: 15px;">reset</button>
+    </div>
+    <div class="screen" tabindex="1"
+      style="display: block; height: 450px; width: 320px; left: 0px; top: 0px; position: absolute; z-index: 0; background: linear-gradient(to bottom, #ffcc00, #ff2400); display: none;"
+      data-theme="default" id="upgradeScreen"><button
+        style="padding: 0px; margin: 0px; border: 1px solid rgb(77, 87, 95); height: 40px; width: 100px; background-color: rgb(255, 164, 0); color: rgb(255, 255, 255); border-radius: 4px; font-family: &quot;Arial Black&quot;, Gadget, sans-serif; font-size: 15px; position: absolute; left: 5px; top: 20px;"
+        id="buy1">basic clicker $50</button><button
+        style="padding: 0px; margin: 0px; border: 1px solid rgb(77, 87, 95); height: 40px; width: 110px; background-color: rgb(255, 164, 0); color: rgb(255, 255, 255); border-radius: 4px; font-family: &quot;Arial Black&quot;, Gadget, sans-serif; font-size: 15px; position: absolute; left: 5px; top: 65px;"
+        id="buy2">super clicker $125</button><button
+        style="padding: 0px; margin: 0px; border: 1px solid rgb(77, 87, 95); height: 40px; width: 105px; background-color: rgb(255, 164, 0); color: rgb(255, 255, 255); border-radius: 4px; font-family: &quot;Arial Black&quot;, Gadget, sans-serif; font-size: 15px; position: absolute; left: 5px; top: 110px;"
+        id="Mclicker">mega clicker $200</button><button
+        style="padding: 0px; margin: 0px; border: 1px solid rgb(77, 87, 95); height: 40px; width: 100px; background-color: rgb(255, 164, 0); color: rgb(255, 255, 255); border-radius: 4px; font-family: &quot;Arial Black&quot;, Gadget, sans-serif; font-size: 15px; position: absolute; left: 5px; top: 155px;"
+        id="Gclicker">giga clicker $500</button><button
+        style="padding: 0px; margin: 0px; border: 1px solid rgb(77, 87, 95); height: 40px; width: 105px; background-color: rgb(255, 164, 0); color: rgb(255, 255, 255); border-radius: 4px; font-family: &quot;Arial Black&quot;, Gadget, sans-serif; font-size: 15px; position: absolute; left: 5px; top: 200px;"
+        id="ultra">ultra clicker $1200</button><button
+        style="padding: 0px; margin: 0px; border: 1px solid rgb(77, 87, 95); height: 40px; width: 115px; background-color: rgb(255, 164, 0); color: rgb(255, 255, 255); border-radius: 4px; font-family: &quot;Arial Black&quot;, Gadget, sans-serif; font-size: 15px; position: absolute; left: 5px; top: 245px;"
+        id="Oclicker">omega clicker $5000</button><label
+        style="margin: 0px; line-height: 1; overflow: hidden; overflow-wrap: break-word; max-width: 320px; border: 0px solid rgb(77, 87, 95); text-rendering: optimizespeed; color: d21404; background-color: rgba(0, 0, 0, 0); border-radius: 0px; font-family: &quot;Arial Black&quot;, Gadget, sans-serif; font-size: 13px; padding: 2px 15px; width: 145px; height: 30px; position: absolute; left: 180px; top: 25px;"
+        id="NEF">insufficent funds</label><label
+        style="margin: 0px; line-height: 1; overflow: hidden; overflow-wrap: break-word; max-width: 320px; border: 0px solid rgb(77, 87, 95); text-rendering: optimizespeed; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 0px; font-family: &quot;Arial Black&quot;, Gadget, sans-serif; font-size: 13px; padding: 2px 15px; width: 110px; height: 20px; position: absolute; left: 200px; top: 5px;"
+        id="money">0</label><label
+        style="margin: 0px; line-height: 1; overflow: hidden; overflow-wrap: break-word; max-width: 320px; border: 0px solid rgb(77, 87, 95); text-rendering: optimizespeed; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 0px; font-family: &quot;Arial Black&quot;, Gadget, sans-serif; font-size: 13px; padding: 2px 15px; width: 40px; height: 18px; position: absolute; left: 190px; top: 5px;"
+        id="moneyLabel">$</label><label
+        style="margin: 0px; line-height: 1; overflow: hidden; overflow-wrap: break-word; max-width: 320px; border: 0px solid rgb(77, 87, 95); text-rendering: optimizespeed; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 0px; font-family: &quot;Arial Black&quot;, Gadget, sans-serif; font-size: 13px; padding: 2px 15px; width: 40px; height: 18px; position: absolute; left: 95px; top: 30px;"
+        id="ClickerNumber2">0</label><label
+        style="margin: 0px; line-height: 1; overflow: hidden; overflow-wrap: break-word; max-width: 320px; border: 0px solid rgb(77, 87, 95); text-rendering: optimizespeed; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 0px; font-family: &quot;Arial Black&quot;, Gadget, sans-serif; font-size: 13px; padding: 2px 15px; width: 40px; height: 18px; position: absolute; left: 105px; top: 75px;"
+        id="SC2">0</label><label
+        style="margin: 0px; line-height: 1; overflow: hidden; overflow-wrap: break-word; max-width: 320px; border: 0px solid rgb(77, 87, 95); text-rendering: optimizespeed; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 0px; font-family: &quot;Arial Black&quot;, Gadget, sans-serif; font-size: 13px; padding: 2px 15px; width: 40px; height: 18px; position: absolute; left: 100px; top: 120px;"
+        id="MCN">0</label><label
+        style="margin: 0px; line-height: 1; overflow: hidden; overflow-wrap: break-word; max-width: 320px; border: 0px solid rgb(77, 87, 95); text-rendering: optimizespeed; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 0px; font-family: &quot;Arial Black&quot;, Gadget, sans-serif; font-size: 13px; padding: 2px 15px; width: 40px; height: 18px; position: absolute; left: 95px; top: 165px;"
+        id="GCN">0</label><label
+        style="margin: 0px; line-height: 1; overflow: hidden; overflow-wrap: break-word; max-width: 320px; border: 0px solid rgb(77, 87, 95); text-rendering: optimizespeed; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); border-radius: 0px; font-family: &quot;Arial Black&quot;, Gadget, sans-serif; font-size: 13px; padding: 2px 15px; width: 40px; height: 18px; position: absolute; left: 100px; top: 210px;"
+        id="UCN">0</label><label
+        style="margin: 0px; line-height: 1; overflow: hidden; overflow-wrap: break-word; max-width: 320px; border: 0px solid rgb(77, 87, 95); text-rendering: optimizespeed; color: rgb(0, 0, ); background-color: rgba(0, 0, 0, 0); border-radius: 0px; font-family: &quot;Arial Black&quot;, Gadget, sans-serif; font-size: 13px; padding: 2px 15px; width: 40px; height: 18px; position: absolute; left: 110px; top: 255px;"
+        id="OCN">0</label><button
+        style="padding: 0px; margin: 0px; border: 1px solid rgb(77, 87, 95); height: 40px; width: 100px; background-color: rgb(0, 0, 0); color: rgb(255, 255, 255); border-radius: 4px; font-family: &quot;Arial Black&quot;, Gadget, sans-serif; font-size: 15px; position: absolute; left: 205px; top: 390px;"
+        id="back">Back</button><button id="MRbutton"
+        style="padding: 0px; margin: 0px; border-style: solid; height: 40px; width: 115px; background-color: rgb(0, 0, 0); color: rgb(255, 255, 255); border-color: rgb(77, 87, 95); border-radius: 4px; border-width: 1px; font-family: &quot;Arial Black&quot;, Gadget, sans-serif; font-size: 15px; position: absolute; left: 5px; top: 295px;">meme
+        roach $50000</button><label
+        style="margin: 0px; line-height: 1; overflow: hidden; overflow-wrap: break-word; max-width: 320px; border-style: solid; text-rendering: optimizespeed; color: #8b0000; background-color: rgba(0, 0, 0, 0); border-color: rgb(77, 87, 95); border-radius: 0px; border-width: 0px; font-family: &quot;Arial Black&quot;, Gadget, sans-serif; font-size: 20px; padding: 2px 15px; width: 80px; height: 50px; position: absolute; left: 110px; top: 305px;"
+        id="MRyesno">no</label>
+      <label for="GRYNT"
+        style="margin: 0px; line-height: 1; overflow: hidden; overflow-wrap: break-word; max-width: 320px; border-style: solid; text-rendering: optimizespeed; color: #8b0000; background-color: rgba(0, 0, 0, 0); border-color: rgb(77, 87, 95); border-radius: 0px; border-width: 0px; font-family: &quot;Arial Black&quot;, Gadget, sans-serif; font-size: 20px; padding: 2px 15px; width: 65px; height: 20px; position: absolute; left: 110px; top: 305px;"
+        id="GRYNT">no</label>
+      <label for="rps2" id="rps2">rps</label>
+      <label for="rpas2n" id="rps2n">0</label>
+    </div>
+    <div class="screen" tabindex="1" data-theme="default" id="resetScreen"
+      style="display: block; height: 450px; width: 320px; left: 0px; top: 0px; position: absolute; z-index: 0; background: linear-gradient(to bottom, #ffcc00, #ff2400);">
+      <label
+        style="margin: 0px; line-height: 1; overflow: hidden; overflow-wrap: break-word; max-width: 320px; border-style: solid; text-rendering: optimizespeed; color: rgb(77, 87, 95); background-color: rgba(0, 0, 0, 0); border-color: rgb(77, 87, 95); border-radius: 0px; border-width: 0px; font-family: &quot;Arial Black&quot;, Gadget, sans-serif; font-size: 29px; padding: 2px 15px; width: 249px; height: 34px; position: absolute; left: 45px; top: 125px;"
+        id="label3">Are you sure?</label><button id="yes"
+        style="padding: 0px; margin: 0px; border-style: solid; height: 40px; width: 100px; background-color: rgb(27, 255, 0); color: rgb(0, 0, 0); border-color: rgb(77, 87, 95); border-radius: 4px; border-width: 1px; font-family: &quot;Arial Black&quot;, Gadget, sans-serif; font-size: 15px; position: absolute; left: 20px; top: 325px;">yes</button><button
+        id="no"
+        style="padding: 0px; margin: 0px; border-style: solid; height: 40px; width: 100px; background-color: rgb(255, 0, 0); color: rgb(0, 0, 0); border-color: rgb(77, 87, 95); border-radius: 4px; border-width: 1px; font-family: &quot;Arial Black&quot;, Gadget, sans-serif; font-size: 15px; position: absolute; left: 195px; top: 325px;">no</button
+<div id="rebirthScreen" class="screen" tabindex="1" data-theme="default"       style="display: block; height: 450px; width: 320px; left: 0px; top: 0px; position: absolute; z-index: 0; background: linear-gradient(to bottom, #ffcc00, #ff2400);">
+    </div>
+      <div class="screen" tabindex="1"
+           style="display: none; /* or block based on your requirement */ 
+                  height: 500px; 
+                  width: 400px; 
+                  left: 20px; 
+                  top: 20px; 
+                  position: absolute; 
+                  z-index: 1; 
+                  background: linear-gradient(to bottom, #ffcc00, #ff2400);"
+           data-theme="default" 
+           id="RebirthScreen">
+           <!-- Add your content for the custom screen here -->
+           <label
+               style="margin: 0px; line-height: 1; overflow: hidden; overflow-wrap: break-word; max-width: 320px; border-style: solid; text-rendering: optimizespeed; color: rgb(77, 87, 95); background-color: rgba(0, 0, 0, 0); border-color: rgb(77, 87, 95); border-radius: 0px; border-width: 0px; font-family: &quot;Arial Black&quot;, Gadget, sans-serif; font-size: 18px; padding: 2px 15px; width: 249px; height: 70px; position: absolute; left: 45px; top: 175px;"
+               id="Rebirth-text">Are you sure? This will cost 1 million</label>
+      </div>
+  </div>
+
+</body>
+
+</html>
